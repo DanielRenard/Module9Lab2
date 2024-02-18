@@ -1,6 +1,6 @@
 let express = require("express");
 let router = express.Router();
-let Controllers = require("../controllers"); // index.js
+let Controllers = require('../controllers')
 
 // Adds a GET route to return all posts
 //http://localhost:8800/api/comments/  Adds a GET route to return all comments
