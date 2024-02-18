@@ -48,8 +48,8 @@ const deleteComment = (req, res) => {
 // ++ Test updating and deleting a comment using Postman
 
 module.exports = {
-  getComments,
-  createComment,
-  updateComment,
-  deleteComment
+getComments,
+createComment,
+updateComment,
+deleteComment
 };

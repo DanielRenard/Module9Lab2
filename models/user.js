@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+// const { Post } = require('.');
+const postSchema = require('./post')
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
@@ -6,6 +8,10 @@ const userSchema = new Schema({
   lastName: { type: String, trim: true, required: true },
   emailId: { type: String, trim: true, required: true, unique: true },
   password: { type: String },
+  comment: [ {type: Schema.Types.ObjectId, ref: 'comment'}],
+  posts: [postSchema],
+  likes: Number,
+  post: [{type: Schema.Types.ObjectId, ref: 'post'}],
   createdAt: { type: Date, default: Date.now },
   updatedAt: { type: Date, default: Date.now },
 });
