@@ -9,7 +9,7 @@ const userSchema = new Schema({
   emailId: { type: String, trim: true, required: true, unique: true },
   password: { type: String },
   comment: [ {type: Schema.Types.ObjectId, ref: 'comment'}],
-  posts: [postSchema],
+  post: [postSchema],
   likes: Number,
   post: [{type: Schema.Types.ObjectId, ref: 'post'}],
   createdAt: { type: Date, default: Date.now },
