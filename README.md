@@ -2,6 +2,8 @@
 
 This is my simple nodejs application to showcase MVC structure and simple Rest API. This boilerplate is very basic and should be used as a training ground
 
+This database uses mongodb.
+
 After installing, run the server using
 
 npm start
@@ -58,4 +60,3 @@ model.
 ● The users should be able to create multiple posts (posts should be very basic with
 title, description and image)
 ● Other users should be able to like the posts and comment on the posts.
-
